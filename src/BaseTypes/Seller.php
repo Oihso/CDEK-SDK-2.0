@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\BaseTypes;
+namespace oihso\CdekSDK2\BaseTypes;
 
 use JMS\Serializer\Annotation\SkipWhenEmpty;
 use JMS\Serializer\Annotation\Type;
 
 /**
  * Class Seller
- * @package CdekSDK2\BaseTypes
+ * @package oihso\CdekSDK2\BaseTypes
  */
 class Seller extends Base
 {

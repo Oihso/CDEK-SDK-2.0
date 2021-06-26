@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Dto;
+namespace oihso\CdekSDK2\Dto;
 
-use CdekSDK2\BaseTypes\Location;
-use CdekSDK2\BaseTypes\Phone;
+use oihso\CdekSDK2\BaseTypes\Location;
+use oihso\CdekSDK2\BaseTypes\Phone;
 use JMS\Serializer\Annotation\Type;
 
 /**
  * Class PickupPoint
- * @package CdekSDK2\Dto
+ * @package oihso\CdekSDK2\Dto
  */
 class PickupPoint
 {
@@ -30,7 +30,7 @@ class PickupPoint
 
     /**
      * Адрес ПВЗ
-     * @Type("CdekSDK2\BaseTypes\Location")
+     * @Type("oihso\CdekSDK2\BaseTypes\Location")
      * @var Location
      */
     public $location;
@@ -149,28 +149,28 @@ class PickupPoint
 
     /**
      * Все фото офиса
-     * @Type("array<CdekSDK2\Dto\PickupImage>")
+     * @Type("array<oihso\CdekSDK2\Dto\PickupImage>")
      * @var PickupImage[]
      */
     public $office_image_list;
 
     /**
      * График работы на неделю
-     * @Type("array<CdekSDK2\Dto\WorkTime>")
+     * @Type("array<oihso\CdekSDK2\Dto\WorkTime>")
      * @var WorkTime[]
      */
     public $work_time_list;
 
     /**
      * Исключения в графике работы офиса
-     * @Type("array<CdekSDK2\Dto\WorkTimeExceptions>")
+     * @Type("array<oihso\CdekSDK2\Dto\WorkTimeExceptions>")
      * @var WorkTimeExceptions[]
      */
     public $work_time_exceptions;
 
     /**
      * Список телефонов
-     * @Type("array<CdekSDK2\BaseTypes\Phone>")
+     * @Type("array<oihso\CdekSDK2\BaseTypes\Phone>")
      * @var Phone[]
      */
     public $phones = [];

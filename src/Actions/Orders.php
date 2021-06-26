@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Actions;
+namespace oihso\CdekSDK2\Actions;
 
-use CdekSDK2\BaseTypes\Order;
-use CdekSDK2\Http\ApiResponse;
+use oihso\CdekSDK2\BaseTypes\Order;
+use oihso\CdekSDK2\Http\ApiResponse;
 
 /**
  * Class Orders
- * @package CdekSDK2\Actions
+ * @package oihso\CdekSDK2\Actions
  */
 class Orders extends ActionsWithDelete
 {
@@ -23,7 +23,7 @@ class Orders extends ActionsWithDelete
      * Создание заказа
      * @param Order $order
      * @return ApiResponse
-     * @throws \CdekSDK2\Exceptions\RequestException
+     * @throws \oihso\CdekSDK2\Exceptions\RequestException
      */
     public function add(Order $order): ApiResponse
     {

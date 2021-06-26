@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\BaseTypes;
+namespace oihso\CdekSDK2\BaseTypes;
 
-use CdekSDK2\Dto\Statuses;
+use oihso\CdekSDK2\Dto\Statuses;
 use JMS\Serializer\Annotation\SkipWhenEmpty;
 use JMS\Serializer\Annotation\Type;
 
 /**
  * Class Intake
- * @package CdekSDK2\BaseTypes
+ * @package oihso\CdekSDK2\BaseTypes
  */
 class Intake extends Base
 {
@@ -114,14 +114,14 @@ class Intake extends Base
 
     /**
      * Отправитель
-     * @Type("CdekSDK2\BaseTypes\Contact")
+     * @Type("oihso\CdekSDK2\BaseTypes\Contact")
      * @var Contact
      */
     public $sender;
 
     /**
      * Адрес отправителя (забора)
-     * @Type("CdekSDK2\BaseTypes\Location")
+     * @Type("oihso\CdekSDK2\BaseTypes\Location")
      * @var Location
      */
     public $from_location;
@@ -135,7 +135,7 @@ class Intake extends Base
 
     /**
      * @SkipWhenEmpty()
-     * @Type("array<CdekSDK2\Dto\Statuses>")
+     * @Type("array<oihso\CdekSDK2\Dto\Statuses>")
      * @var Statuses[]
      */
     public $statuses;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\BaseTypes;
+namespace oihso\CdekSDK2\BaseTypes;
 
 use JMS\Serializer\Annotation as Serializer;
 use JMS\Serializer\Annotation\Type;
@@ -10,7 +10,7 @@ use Rakit\Validation\Validator;
 
 /**
  * Class Base
- * @package CdekSDK2\BaseTypes
+ * @package oihso\CdekSDK2\BaseTypes
  */
 class Base
 {

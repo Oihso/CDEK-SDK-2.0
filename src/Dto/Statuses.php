@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Dto;
+namespace oihso\CdekSDK2\Dto;
 
 use JMS\Serializer\Annotation\Type;
 
 /**
  * Class Statuses
- * @package CdekSDK2\Dto
+ * @package oihso\CdekSDK2\Dto
  */
 class Statuses
 {

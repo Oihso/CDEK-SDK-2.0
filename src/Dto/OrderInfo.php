@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Dto;
+namespace oihso\CdekSDK2\Dto;
 
-use CdekSDK2\BaseTypes\Contact;
-use CdekSDK2\BaseTypes\Location;
-use CdekSDK2\BaseTypes\Money;
-use CdekSDK2\BaseTypes\Package;
-use CdekSDK2\BaseTypes\Seller;
-use CdekSDK2\BaseTypes\Services;
-use CdekSDK2\BaseTypes\Threshold;
+use oihso\CdekSDK2\BaseTypes\Contact;
+use oihso\CdekSDK2\BaseTypes\Location;
+use oihso\CdekSDK2\BaseTypes\Money;
+use oihso\CdekSDK2\BaseTypes\Package;
+use oihso\CdekSDK2\BaseTypes\Seller;
+use oihso\CdekSDK2\BaseTypes\Services;
+use oihso\CdekSDK2\BaseTypes\Threshold;
 use JMS\Serializer\Annotation\SkipWhenEmpty;
 use JMS\Serializer\Annotation\Type;
 
 /**
  * Class Order
- * @package CdekSDK2\Dto
+ * @package oihso\CdekSDK2\Dto
  */
 class OrderInfo
 {
@@ -127,77 +127,77 @@ class OrderInfo
 
     /**
      * Стоимость доставки, которую ИМ берет с получателя
-     * @Type("CdekSDK2\BaseTypes\Money")
+     * @Type("oihso\CdekSDK2\BaseTypes\Money")
      * @var Money
      */
     public $delivery_recipient_cost;
 
     /**
      * Доп. сбор за доставку (которую ИМ берет с получателя) в зависимости от суммы заказа
-     * @Type("array<CdekSDK2\BaseTypes\Threshold>")
+     * @Type("array<oihso\CdekSDK2\BaseTypes\Threshold>")
      * @var Threshold[]
      */
     public $delivery_recipient_cost_adv;
 
     /**
      * Отправитель
-     * @Type("CdekSDK2\BaseTypes\Contact")
+     * @Type("oihso\CdekSDK2\BaseTypes\Contact")
      * @var Contact
      */
     public $sender;
 
     /**
      * Реквизиты реального продавца
-     * @Type("CdekSDK2\BaseTypes\Seller")
+     * @Type("oihso\CdekSDK2\BaseTypes\Seller")
      * @var Seller
      */
     public $seller;
 
     /**
      * Получатель
-     * @Type("CdekSDK2\BaseTypes\Contact")
+     * @Type("oihso\CdekSDK2\BaseTypes\Contact")
      * @var Contact
      */
     public $recipient;
 
     /**
      * Адрес отправления
-     * @Type("CdekSDK2\BaseTypes\Location")
+     * @Type("oihso\CdekSDK2\BaseTypes\Location")
      * @var Location
      */
     public $from_location;
 
     /**
      * Адрес получения
-     * @Type("CdekSDK2\BaseTypes\Location")
+     * @Type("oihso\CdekSDK2\BaseTypes\Location")
      * @var Location
      */
     public $to_location;
 
     /**
      * Дополнительные услуги
-     * @Type("array<CdekSDK2\BaseTypes\Services>")
+     * @Type("array<oihso\CdekSDK2\BaseTypes\Services>")
      * @var Services[]
      */
     public $services;
 
     /**
      * Список информации по местам
-     * @Type("array<CdekSDK2\BaseTypes\Package>")
+     * @Type("array<oihso\CdekSDK2\BaseTypes\Package>")
      * @var Package[]
      */
     public $packages;
 
     /**
      * Список статусов по заказу, отсортированных по дате и времени
-     * @Type("array<CdekSDK2\Dto\Statuses>")
+     * @Type("array<oihso\CdekSDK2\Dto\Statuses>")
      * @var Statuses[]
      */
     public $statuses;
 
     /**
      * Информация о вручении
-     * @Type("CdekSDK2\Dto\DeliveryDetail")
+     * @Type("oihso\CdekSDK2\Dto\DeliveryDetail")
      * @var DeliveryDetail
      */
     public $delivery_detail;

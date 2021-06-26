@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Http;
+namespace oihso\CdekSDK2\Http;
 
-use CdekSDK2\Constants;
-use CdekSDK2\Exceptions\AuthException;
-use CdekSDK2\Exceptions\RequestException;
+use oihso\CdekSDK2\Constants;
+use oihso\CdekSDK2\Exceptions\AuthException;
+use oihso\CdekSDK2\Exceptions\RequestException;
 use Nyholm\Psr7\Request;
 use Nyholm\Psr7\Uri;
 use Psr\Http\Client\ClientExceptionInterface;
@@ -14,7 +14,7 @@ use Psr\Http\Client\ClientInterface;
 
 /**
  * Class Api
- * @package CdekSDK2\Http
+ * @package oihso\CdekSDK2\Http
  */
 class Api
 {

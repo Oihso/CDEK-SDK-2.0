@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\BaseTypes;
+namespace oihso\CdekSDK2\BaseTypes;
 
-use CdekSDK2\Dto\ResponseStatus;
+use oihso\CdekSDK2\Dto\ResponseStatus;
 use JMS\Serializer\Annotation\Type;
 
 class Barcode extends Base
@@ -19,7 +19,7 @@ class Barcode extends Base
 
     /**
      * Список заказов
-     * @Type("array<CdekSDK2\BaseTypes\OrdersList>")
+     * @Type("array<oihso\CdekSDK2\BaseTypes\OrdersList>")
      * @var OrdersList[]
      */
     public $orders;
@@ -47,7 +47,7 @@ class Barcode extends Base
 
     /**
      * Список статусов запроса
-     * @Type("array<CdekSDK2\Dto\ResponseStatus>")
+     * @Type("array<oihso\CdekSDK2\Dto\ResponseStatus>")
      * @var ResponseStatus[]
      */
     public $statuses;

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\BaseTypes;
+namespace oihso\CdekSDK2\BaseTypes;
 
 use JMS\Serializer\Annotation\Type;
 
 /**
  * Class Item
- * @package CdekSDK2\BaseTypes
+ * @package oihso\CdekSDK2\BaseTypes
  */
 class Item extends Base
 {
@@ -35,7 +35,7 @@ class Item extends Base
 
     /**
      * Оплата за товар при получении
-     * @Type("CdekSDK2\BaseTypes\Money")
+     * @Type("oihso\CdekSDK2\BaseTypes\Money")
      * @var Money
      */
     public $payment;

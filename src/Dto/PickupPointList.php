@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Dto;
+namespace oihso\CdekSDK2\Dto;
 
 use JMS\Serializer\Annotation\Type;
 
 /**
  * Class PickupPointList
- * @package CdekSDK2\Dto
+ * @package oihso\CdekSDK2\Dto
  */
 class PickupPointList
 {
     /**
      * Список ПВЗ
-     * @Type("array<CdekSDK2\Dto\PickupPoint>")
+     * @Type("array<oihso\CdekSDK2\Dto\PickupPoint>")
      * @var PickupPoint[]
      */
     public $items = [];

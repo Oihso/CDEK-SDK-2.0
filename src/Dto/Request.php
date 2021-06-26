@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Dto;
+namespace oihso\CdekSDK2\Dto;
 
 use JMS\Serializer\Annotation\Type;
 
 /**
  * Class Request
- * @package CdekSDK2\Dto
+ * @package oihso\CdekSDK2\Dto
  */
 class Request
 {
@@ -44,14 +44,14 @@ class Request
 
     /**
      * Список ошибок
-     * @Type("array<CdekSDK2\Dto\Error>")
+     * @Type("array<oihso\CdekSDK2\Dto\Error>")
      * @var Error[]
      */
     public $errors;
 
     /**
      * Список предупреждений
-     * @Type("array<CdekSDK2\Dto\Warning>")
+     * @Type("array<oihso\CdekSDK2\Dto\Warning>")
      * @var Warning[]
      */
     public $warnings;

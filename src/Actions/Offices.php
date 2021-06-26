@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Actions;
+namespace oihso\CdekSDK2\Actions;
 
 /**
  * Class Offices
- * @package CdekSDK2\Actions
+ * @package oihso\CdekSDK2\Actions
  */
 class Offices extends Action
 {

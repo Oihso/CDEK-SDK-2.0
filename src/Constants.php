@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2;
+namespace oihso\CdekSDK2;
 
 /**
  * Class Constants
- * @package CdekSDK2
+ * @package oihso\CdekSDK2
  */
 class Constants
 {

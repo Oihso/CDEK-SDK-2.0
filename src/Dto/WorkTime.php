@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Dto;
+namespace oihso\CdekSDK2\Dto;
 
 use JMS\Serializer\Annotation\Type;
 
 /**
  * Class WorkTime
- * @package CdekSDK2\BaseTypes
+ * @package oihso\CdekSDK2\BaseTypes
  */
 class WorkTime
 {

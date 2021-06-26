@@ -2,25 +2,25 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2;
+namespace oihso\CdekSDK2;
 
-use CdekSDK2\Actions\Barcodes;
-use CdekSDK2\Actions\Intakes;
-use CdekSDK2\Actions\Invoices;
-use CdekSDK2\Actions\LocationCities;
-use CdekSDK2\Actions\LocationRegions;
-use CdekSDK2\Actions\Offices;
-use CdekSDK2\Actions\Orders;
-use CdekSDK2\Actions\Webhooks;
-use CdekSDK2\Dto\CityList;
-use CdekSDK2\Dto\RegionList;
-use CdekSDK2\Dto\WebHookList;
-use CdekSDK2\Dto\PickupPointList;
-use CdekSDK2\Dto\Response;
-use CdekSDK2\Exceptions\AuthException;
-use CdekSDK2\Exceptions\ParsingException;
-use CdekSDK2\Http\Api;
-use CdekSDK2\Http\ApiResponse;
+use oihso\CdekSDK2\Actions\Barcodes;
+use oihso\CdekSDK2\Actions\Intakes;
+use oihso\CdekSDK2\Actions\Invoices;
+use oihso\CdekSDK2\Actions\LocationCities;
+use oihso\CdekSDK2\Actions\LocationRegions;
+use oihso\CdekSDK2\Actions\Offices;
+use oihso\CdekSDK2\Actions\Orders;
+use oihso\CdekSDK2\Actions\Webhooks;
+use oihso\CdekSDK2\Dto\CityList;
+use oihso\CdekSDK2\Dto\RegionList;
+use oihso\CdekSDK2\Dto\WebHookList;
+use oihso\CdekSDK2\Dto\PickupPointList;
+use oihso\CdekSDK2\Dto\Response;
+use oihso\CdekSDK2\Exceptions\AuthException;
+use oihso\CdekSDK2\Exceptions\ParsingException;
+use oihso\CdekSDK2\Http\Api;
+use oihso\CdekSDK2\Http\ApiResponse;
 use JMS\Serializer\Naming\IdenticalPropertyNamingStrategy;
 use JMS\Serializer\Naming\SerializedNameAnnotationStrategy;
 use JMS\Serializer\Serializer;
@@ -29,7 +29,7 @@ use Psr\Http\Client\ClientInterface;
 
 /**
  * Class Client
- * @package CdekSDK2
+ * @package oihso\CdekSDK2
  */
 class Client
 {

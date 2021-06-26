@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Http;
+namespace oihso\CdekSDK2\Http;
 
 use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class ApiResponse
- * @package CdekSDK2\Http
+ * @package oihso\CdekSDK2\Http
  */
 class ApiResponse
 {

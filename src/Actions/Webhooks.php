@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Actions;
+namespace oihso\CdekSDK2\Actions;
 
-use CdekSDK2\BaseTypes\WebHook;
-use CdekSDK2\Dto\InputHook;
-use CdekSDK2\Http\ApiResponse;
+use oihso\CdekSDK2\BaseTypes\WebHook;
+use oihso\CdekSDK2\Dto\InputHook;
+use oihso\CdekSDK2\Http\ApiResponse;
 
 /**
  * Class Webhooks
- * @package CdekSDK2\Actions
+ * @package oihso\CdekSDK2\Actions
  */
 class Webhooks extends ActionsWithDelete
 {
@@ -24,7 +24,7 @@ class Webhooks extends ActionsWithDelete
      * Добавление нового слушателя вебхуков
      * @param WebHook $webHook
      * @return ApiResponse
-     * @throws \CdekSDK2\Exceptions\RequestException
+     * @throws \oihso\CdekSDK2\Exceptions\RequestException
      */
     public function add(WebHook $webHook): ApiResponse
     {
@@ -35,7 +35,7 @@ class Webhooks extends ActionsWithDelete
     /**
      * Получение списка вебхуков
      * @return ApiResponse
-     * @throws \CdekSDK2\Exceptions\RequestException
+     * @throws \oihso\CdekSDK2\Exceptions\RequestException
      */
     public function list(): ApiResponse
     {

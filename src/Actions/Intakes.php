@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Actions;
+namespace oihso\CdekSDK2\Actions;
 
-use CdekSDK2\BaseTypes\Intake;
-use CdekSDK2\Http\ApiResponse;
+use oihso\CdekSDK2\BaseTypes\Intake;
+use oihso\CdekSDK2\Http\ApiResponse;
 
 /**
  * Class Intakes
- * @package CdekSDK2\Actions
+ * @package oihso\CdekSDK2\Actions
  */
 class Intakes extends ActionsWithDelete
 {
@@ -23,7 +23,7 @@ class Intakes extends ActionsWithDelete
      * Создание вызова курьера
      * @param Intake $intake
      * @return ApiResponse
-     * @throws \CdekSDK2\Exceptions\RequestException
+     * @throws \oihso\CdekSDK2\Exceptions\RequestException
      */
     public function add(Intake $intake): ApiResponse
     {

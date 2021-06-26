@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Dto;
+namespace oihso\CdekSDK2\Dto;
 
 use JMS\Serializer\Annotation\Type;
 
 /**
  * Class InputHook
- * @package CdekSDK2\BaseTypes
+ * @package oihso\CdekSDK2\BaseTypes
  */
 class InputHook
 {
@@ -35,7 +35,7 @@ class InputHook
 
     /**
      * Атрибуты события
-     * @Type("CdekSDK2\Dto\Attributes")
+     * @Type("oihso\CdekSDK2\Dto\Attributes")
      * @var Attributes
      */
     public $attributes;

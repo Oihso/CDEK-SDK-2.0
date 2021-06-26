@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\Actions;
+namespace oihso\CdekSDK2\Actions;
 
-use CdekSDK2\Http\ApiResponse;
+use oihso\CdekSDK2\Http\ApiResponse;
 
 trait FilteredTrait
 {

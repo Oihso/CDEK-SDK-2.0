@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\BaseTypes;
+namespace oihso\CdekSDK2\BaseTypes;
 
 use JMS\Serializer\Annotation\SkipWhenEmpty;
 use JMS\Serializer\Annotation\Type;
 
 /**
  * Class Contact
- * @package CdekSDK2\BaseTypes
+ * @package oihso\CdekSDK2\BaseTypes
  */
 class Contact extends Base
 {
@@ -38,7 +38,7 @@ class Contact extends Base
 
     /**
      * Список телефонов
-     * @Type("array<CdekSDK2\BaseTypes\Phone>")
+     * @Type("array<oihso\CdekSDK2\BaseTypes\Phone>")
      * @var Phone[]
      */
     public $phones = [];

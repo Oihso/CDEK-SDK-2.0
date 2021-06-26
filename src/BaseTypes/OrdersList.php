@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\BaseTypes;
+namespace oihso\CdekSDK2\BaseTypes;
 
 use JMS\Serializer\Annotation\Type;
 

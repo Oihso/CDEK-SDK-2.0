@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace CdekSDK2\BaseTypes;
+namespace oihso\CdekSDK2\BaseTypes;
 
 use JMS\Serializer\Annotation\Type;
 
 /**
  * Class Package
- * @package CdekSDK2\BaseTypes
+ * @package oihso\CdekSDK2\BaseTypes
  */
 class Package extends Base
 {
@@ -70,7 +70,7 @@ class Package extends Base
 
     /**
      * Позиции товаров в упаковке
-     * @Type("array<CdekSDK2\BaseTypes\Item>")
+     * @Type("array<oihso\CdekSDK2\BaseTypes\Item>")
      * @var Item[]
      */
     public $items;
