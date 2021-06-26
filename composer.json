@@ -1,5 +1,5 @@
 {
-  "name": "cdek-it/sdk2.0",
+  "name": "oihso/cdeksdk2",
   "type": "library",
   "description": "PHP SDK для API v2.0 от сервиса интеграции компании СДЭК",
   "keywords": [
@@ -44,17 +44,17 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "v0.0.1-dev"
+      "dev-master": "v0.0.2-dev"
     }
   },
   "autoload": {
     "psr-4": {
-      "CdekSDK2\\": "src/"
+      "oihso\\CdekSDK2\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "CdekSDK2\\Tests\\": "tests/"
+      "oihso\\CdekSDK2\\Tests\\": "tests/"
     }
   },
   "scripts": {
